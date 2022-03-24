@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>Intro component with sign up form</title>
+
+    <!-- font styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
+    <script src="formCheck.js" defer></script>
+  </head>
+  <body>
+    <main class="flex flex-column">
+      <article>
+        <h1 class="text-white fs-200 fw-300">
+          Learn to code by <span class="d-block">watching others</span>
+        </h1>
+        <h2 class="text-white fs-100 fw-100">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </h2>
+      </article>
+      <section class="flex flex-column">
+        <button class="text-white fs-100 fw-200 bg-accent-100">
+          <span class="fw-300">Try it free 7 days</span> then $20/mo. thereafter
+        </button>
+        <form action="" class="flex flex-column">
+          <label for="first-name">
+            <input
+              class="text-neutral-200 fs-100 fw-300"
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="First Name"
+              required
+            />
+            <img
+              class="error-icon"
+              src="./images/icon-error.svg"
+              alt="error icon"
+            />
+            <p class="error-messege text-primary-100 fs-50 fw-200">
+              First Name cannot be empty
+            </p>
+          </label>
+          <label for="last-name">
+            <input
+              class="text-neutral-200 fs-100 fw-300"
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Last Name"
+              required
+            />
+            <img
+              class="error-icon"
+              src="./images/icon-error.svg"
+              alt="error icon"
+            />
+            <p class="error-messege text-primary-100 fs-50 fw-200">
+              Last Name cannot be empty
+            </p>
+          </label>
+          <label for="email">
+            <input
+              class="text-neutral-200 fs-100 fw-300"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+            <img
+              class="error-icon"
+              src="./images/icon-error.svg"
+              alt="error icon"
+            />
+            <p class="error-messege text-primary-100 fs-50 fw-200">
+              Email cannot be empty
+            </p>
+          </label>
+          <label for="password">
+            <input
+              class="text-neutral-200 fs-100 fw-300"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <img
+              class="error-icon"
+              src="./images/icon-error.svg"
+              alt="error icon"
+            />
+            <p class="error-messege text-primary-100 fs-50 fw-200">
+              Password cannot be empty
+            </p>
+          </label>
+          <button class="text-white uppercase fs-100 fw-200 bg-primary-200">
+            Claim your free trial
+          </button>
+          <p class="text-center text-neutral-100 fs-50 fw-200">
+            By clicking the button, you are agreeing to our
+            <span class="text-primary-100 fw-300">Terms and Services</span>
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
