@@ -14,11 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-    <!-- JS -->
+
+    <!-- Validate.JS library -->
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+    <!-- Custom JS -->
     <script src="formCheck.js" defer></script>
+
   </head>
   <body>
     <main class="flex flex-column">
@@ -44,7 +48,7 @@
               name="first-name"
               id="first-name"
               placeholder="First Name"
-              required
+             
             />
             <img
               class="error-icon"
@@ -62,7 +66,7 @@
               name="last-name"
               id="last-name"
               placeholder="Last Name"
-              required
+              
             />
             <img
               class="error-icon"
@@ -80,7 +84,7 @@
               name="email"
               id="email"
               placeholder="Email Address"
-              required
+              
             />
             <img
               class="error-icon"
@@ -88,7 +92,7 @@
               alt="error icon"
             />
             <p class="error-messege text-primary-100 fs-50 fw-200">
-              Email cannot be empty
+              Email is not valid
             </p>
           </label>
           <label for="password">
@@ -98,7 +102,7 @@
               name="password"
               id="password"
               placeholder="Password"
-              required
+             
             />
             <img
               class="error-icon"
